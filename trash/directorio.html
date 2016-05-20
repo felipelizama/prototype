@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Prototipo</title>
+    <!-- Webkit -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300italic,300,100italic,100,400italic,500,500italic,700,700italic,900' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS Global-->
+    <link rel="stylesheet" href="css/web-components.css">
+    <link rel="stylesheet" href="fen-icons.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/grayscale.css">
+</head>
+<style type="text/css">
+    @media (min-width: 768px){
+   
+        }
+
+</style>
+<body>
+
+    <nav id="nav-fen" class="navbar navbar-inverse-fen navbar-fixed-top" role="navigation">
+        <div id="navbar-h" class="navbar-header">
+           <a class="navbar-brand" href="index.html" target="_blank"><i class="i-fen-logo i-fen-logo-fen"></i></a>
+           <form class="navbar-form" role="search" align="right">
+                <a class="uchile-link" href="#"><p>Universidad de Chile</p></a>
+                <a href="index.html" target="_blank"><img src="fonts/en.svg" style="height: 14px;"></a>
+                <a href="index.html" target="_blank"><img src="fonts/es.svg" style="height: 14px;"></a>
+                <div class="input-group" align="right">
+                    <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+                    <div class="input-group-btn">
+                        <button class="btn-2 btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <!--QUIENES SOMOS -->
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">QUIENES SOMOS<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Historia</a></li>
+                        <li><a href="#">Plan Estrategico</a></li>
+                        <li><a href="#">Equipo Directivo</a></li>
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Estructura</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Equipo Directivo</a></li>
+                                <li><a href="#">Consejo de Facultad</a></li>
+                                <li><a href="#">Comisión de evaluación Académica</a></li>
+                                <li><a href="#">Consejo Consultivo Empresarial</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Key Facts</a></li>
+                        <li><a href="#">Rankingy Acreditación</a></li>
+                        <li><a href="#" class="active">Brochure</a></li>
+                    </ul>
+                </li>
+                <!--PROGRAMAS -->
+                 <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">PROGRAMAS<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Pregrado</a></li>
+                        <li><a href="#">Postgrado</a></li>
+                        <li><a href="#">Programas Educación Ejecutiva</a></li>
+                    </ul>
+                </li>
+                <!--ACADEMICOS & INVESTIGACIÓN -->
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">ACADEMICOS & INVESTIGACIÓN<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Directorio Academicos</a></li>
+                        <li><a href="#">Investigación</a></li>
+                        <li><a href="#">Publicación</a></li>
+                        <li class="divider"></li>
+                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Publicaciones</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Papers</a></li>
+                                    <li><a href="#">Contribuciones Nacionales</a></li>
+                                    <li><a href="#">Contribuciones InterNacionales</a></li>
+                                    <li><a href="#">Revistas</a></li>
+                                </ul>
+                            </li>
+                        <li><a href="#">Departamentos</a></li>
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Centros de Investigación</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Microdatos</a></li>
+                                <li><a href="#">IAS</a></li>
+                                <li><a href="#">CREM</a></li>
+                                <li><a href="#">CLG</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Observatorios y C. Departamentales</a></li>
+                    </ul>
+                </li>
+                <!--COMUNIDAD FEN -->
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">COMUNIDAD FEN<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Vida Universitaria</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">alumni</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Beneficios</a></li>
+                                <li><a href="#">Donaciones</a></li>
+                            </ul>
+                        </li>
+                         <li><a href="#">Grupo Politica Monetaria</a></li>
+                        <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Sala de Prensa</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Registro Fotográfico</a></li>
+                                <li><a href="#">Directorio por área de interés</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">FEN en la Prensa</a></li>
+                        <li><a href="#">Redes Sociales</a></li>
+                    </ul>
+                </li>
+                <!--COMUNIDAD FEN -->
+                <li><a href="#">CONTACTO</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Alumni</a></li>
+            </ul>
+           <!--  <form class="navbar-form" role="search">
+                <div class="input-group" align="right">
+                    <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+                    <div class="input-group-btn">
+                        <button class="btn-2 btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                </div>
+            </form> -->
+        </div><!-- /.navbar-collapse -->
+    </nav><!-- Navigation -->
+
+
+    <div id="articulos" class="container animated fadeIn">
+        <div class="row">
+            <div class="col-md-12">
+                <ol class="breadcrumb">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Library</a></li>
+                  <li class="active">Data</li>
+                </ol>
+            </div>
+        </div>
+        <div id="content row">
+            <ul id="tabs" class="nav nav-pills nav-stacked col-md-4" data-tabs="tabs">
+                <li class="active"><a href="#red" data-toggle="tab">Historia Facultad</a></li>
+                <li><a href="#orange" data-toggle="tab">Plan Estrategico</a></li>
+                <li><a href="#yellow" data-toggle="tab">Equipo Directivo</a></li>
+                <li><a href="#green" data-toggle="tab">Estructura</a></li>
+                <li><a href="#blue" data-toggle="tab">Key Facts</a></li>
+                <li><a href="#yellow" data-toggle="tab">Ranking & Acreditaciones</a></li>
+                <li><a href="#green" data-toggle="tab">Brochure</a></li>
+            </ul>
+            <div id="my-tab-content" class="tab-content col-md-8">
+                <div class="tab-pane active" id="red">
+                    <h1 class="page-header">Historia Facultad<small> fen.uchile.cl</small></h1>
+                    <a href="#"><img class="img-responsive" src="http://placehold.it/700x400" alt=""></a>
+                    <h4><a class="link-fen" href="#">Project Name</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                    <h4><a class="link-fen" href="#">Project Name</a></h4>
+                    <ul id="list-articulos">
+                        <li>
+                            <i class="i-fen i-fen-step-one"></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                        </li>
+                        <li>
+                            <i class="i-fen i-fen-step-two"></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                        </li>
+                        <li>
+                            <i class="i-fen i-fen-step-three"></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                        </li>
+                        <li>
+                            <i class="i-fen i-fen-step-four"></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                        </li>
+                    </ul>   
+                </div>
+                <div class="tab-pane" id="orange">
+                    <h1 class="page-header">Plan Estrategico<small> fen.uchile.cl</small></h1>
+                        <a href="#"><img class="img-responsive" src="http://placehold.it/700x400" alt=""></a>
+                            <h4><a class="link-fen" href="#">Project Name</a></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                            <h4><a class="link-fen" href="#">Project Name</a></h4>
+                            <ul id="list-articulos">
+                                <li>
+                                    <i class="i-fen i-fen-step-one"></i>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                                </li>
+                                <li>
+                                    <i class="i-fen i-fen-step-two"></i>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                                </li>
+                                <li>
+                                    <i class="i-fen i-fen-step-three"></i>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                                </li>
+                                <li>
+                                    <i class="i-fen i-fen-step-four"></i>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                                </li>
+                            </ul>  
+                </div>
+                <div class="tab-pane" id="yellow">
+                    <h1 class="page-header">Equipo Directivo<small> fen.uchile.cl</small></h1>
+                        <!-- SECTION: Crew -->
+                        <div class="crew has-padding alternate-bg" id="team">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <article class="crew-member" style="background-image: url(img/directivos/nombre_apellido.jpg">
+                                        <figure>
+                                            <figcaption class="overlay">
+                                                <h2>Peter Finlan</h2>
+                                                <p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.</p>
+                                                <div class="crew-socials">
+                                                    <ul>
+                                                        <li><a href="http://www.twitter.com/peterfinlan/"><i class="fa fa-twitter"></i></a>
+                                                        </li>
+                                                        <li><a href="http://www.linkedin.com/in/peterfinlan/"><i class="fa fa-linkedin"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <article class="crew-member" style="background-image: url(img/directivos/nombre_apellido.jpg">
+                                        <figure>
+                                            <figcaption class="overlay">
+                                                <h2>Blaz Robar</h2>
+                                                <p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.</p>
+                                                <div class="crew-socials">
+                                                    <ul>
+                                                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                                                        </li>
+                                                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <article class="crew-member" style="background-image: url(img/directivos/nombre_apellido.jpg">
+                                        <figure>
+                                            <figcaption class="overlay">
+                                                <h2>Mary Lou</h2>
+                                                <p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.</p>
+                                                <div class="crew-socials">
+                                                    <ul>
+                                                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                                                        </li>
+                                                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="row" style="padding-top: 20px; padding-bottom: 20px;">
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <article class="crew-member" style="background-image: url(img/directivos/nombre_apellido.jpg">
+                                        <figure>
+                                            <figcaption class="overlay">
+                                                <h2>Kobe West</h2>
+                                                <p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.</p>
+                                                <div class="crew-socials">
+                                                    <ul>
+                                                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                                                        </li>
+                                                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <article class="crew-member" style="background-image: url(img/directivos/nombre_apellido.jpg">
+                                        <figure>
+                                            <figcaption class="overlay">
+                                                <h2>Kobe West</h2>
+                                                <p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.</p>
+                                                <div class="crew-socials">
+                                                    <ul>
+                                                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                                                        </li>
+                                                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <article class="crew-member" style="background-image: url(img/directivos/nombre_apellido.jpg">
+                                        <figure>
+                                            <figcaption class="overlay">
+                                                <h2>Kobe West</h2>
+                                                <p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.</p>
+                                                <div class="crew-socials">
+                                                    <ul>
+                                                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                                                        </li>
+                                                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="tab-pane" id="green">
+                    <h1 class="page-header">Estructura<small> fen.uchile.cl</small></h1>
+                    <a href="#"><img class="img-responsive" src="http://placehold.it/700x400" alt=""></a>
+                    <h4><a class="link-fen" href="#">Project Name</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                    <h4><a class="link-fen" href="#">Project Name</a></h4>
+                    <ul id="list-articulos">
+                        <li>
+                            <i class="i-fen i-fen-step-one"></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                        </li>
+                        <li>
+                            <i class="i-fen i-fen-step-two"></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                        </li>
+                        <li>
+                            <i class="i-fen i-fen-step-three"></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                        </li>
+                        <li>
+                            <i class="i-fen i-fen-step-four"></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                        </li>
+                    </ul>  
+                </div>
+                <div class="tab-pane" id="blue">
+                    <h1 class="page-header">Key Facts<small> fen.uchile.cl</small></h1>
+                    <a href="#"><img class="img-responsive" src="http://placehold.it/700x400" alt=""></a>
+                    <h4><a class="link-fen" href="#">Project Name</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                    <h4><a class="link-fen" href="#">Project Name</a></h4>
+                    <ul id="list-articulos">
+                        <li>
+                            <i class="i-fen i-fen-step-one"></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                        </li>
+                        <li>
+                            <i class="i-fen i-fen-step-two"></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                        </li>
+                        <li>
+                            <i class="i-fen i-fen-step-three"></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                        </li>
+                        <li>
+                            <i class="i-fen i-fen-step-four"></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                        </li>
+                    </ul>  
+                </div>
+                <div class="tab-pane" id="blue">
+                    <h1 class="page-header">Ranking & Acreditaciones<small> fen.uchile.cl</small></h1>
+                    <a href="#"><img class="img-responsive" src="http://placehold.it/700x400" alt=""></a>
+                    <h4><a class="link-fen" href="#">Project Name</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                    <h4><a class="link-fen" href="#">Project Name</a></h4>
+                    <ul id="list-articulos">
+                        <li>
+                            <i class="i-fen i-fen-step-one"></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                        </li>
+                        <li>
+                            <i class="i-fen i-fen-step-two"></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                        </li>
+                        <li>
+                            <i class="i-fen i-fen-step-three"></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                        </li>
+                        <li>
+                            <i class="i-fen i-fen-step-four"></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                        </li>
+                    </ul>  
+                </div>
+                <div class="tab-pane" id="blue">
+                    <h1 class="page-header">Brochure<small> fen.uchile.cl</small></h1>
+                    <a href="#"><img class="img-responsive" src="http://placehold.it/700x400" alt=""></a>
+                    <h4><a class="link-fen" href="#">Project Name</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                    <h4><a class="link-fen" href="#">Project Name</a></h4>
+                    <ul id="list-articulos">
+                        <li>
+                            <i class="i-fen i-fen-step-one"></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                        </li>
+                        <li>
+                            <i class="i-fen i-fen-step-two"></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                        </li>
+                        <li>
+                            <i class="i-fen i-fen-step-three"></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                        </li>
+                        <li>
+                            <i class="i-fen i-fen-step-four"></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                        </li>
+                    </ul>  
+                </div>
+            </div>
+        </div>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('#tabs').tab();
+        });
+    </script>    
+</div> <!-- NAV PILLS STACKED -->
+
+
+<!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row bg-footer-1" align="left">
+                <div id="f1" class="col-md-6">
+                    <p>ACREDITACIONES</p>
+                    <ul class="credencial-footer">
+                        <li><i class="i-fen-xl i-fen-aacsb"></i></li>
+                        <li><i class="i-fen-xl i-fen-acreditacion"></i></li>
+                        <li><i class="i-fen-xl i-fen-amba"></i></li>
+                    </ul>
+                </div>
+              <!--   <div class="col-md-4">
+                    <p>Footer aqui</p>
+                </div> -->
+                <div id="f2" class="col-md-6" align="right">
+                <p>REDES SOCIALES</p>
+                    <ul class="social-footer">
+                        <li><a href="https://www.facebook.com/UChileFEN?ref=hl"><i class="i-fen i-fen-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/DecanatoFEN"><i class="i-fen i-fen-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/facultad-de-econom%C3%ADa-y-negocios---
+                        universidad-de-chile"><i class="i-fen i-fen-linkedin"></i></a></li>
+                        <li><a href="https://www.youtube.com/user/UdeChileFEN"><i class="i-fen i-fen-youtube"></i></a></li>
+                        <li><a href="https://www.instagram.com/fen.uchile/"><i class="i-fen i-fen-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+
+    </footer>
+    <footer>
+            <div class="row" align="center">
+                <div class="col-lg-12 bg-footer-2">
+                    <p>Diagonal Paraguay 205 - 257 Santiago de Chile - Código Postal 0023456</p>
+                </div>
+            </div>
+            <!-- /.row -->
+    </footer> 
+</body>
+
+
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="js/grayscale.js"></script>
+    <script type="text/javascript">
+        (function($){
+        $(document).ready(function(){
+            $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+                event.preventDefault(); 
+                event.stopPropagation(); 
+                $(this).parent().siblings().removeClass('open');
+                $(this).parent().toggleClass('open');
+            });
+        });
+    })(jQuery);
+    </script>
+
+    <script type="text/javascript">
+    // function collapseNavbar() {
+    //     if ($(".navbar").offset().top > 50) {
+    //         $("#navbar-h").addClass("top-nav-collapse");
+    //     } else {
+    //         $("#navbar-h").removeClass("top-nav-collapse");
+    //     }
+    // }
+    // //     $(window).scroll(function() {
+    // //   if ($(document).scrollTop() > 50) {
+    // //     $('nav div.navbar-header').removeClass("navbar-header");
+    // //   } 
+     
+    // // });
+    </script>
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+        $(document).scroll(function(e){
+
+            console.log(e);
+            
+            var posicionScroll = $(this).scrollTop();
+
+            if(posicionScroll < 50){
+                //$('#navbar-h').addClass("animated fadeOutTop slow");
+                $('#navbar-h').show(300).addClass("navbar-header");
+
+            } 
+            else {
+                $('#navbar-h').hide(300).removeClass("navbar-header");
+                 //$( "#navbar-h" ).hide("slow");
+            }
+        });
+    });
+
+    //     $(window).scroll(function(e) {
+    //         console.log(e);
+
+    //   if ($(document).scrollTop() < 50) {
+    //     $('nav div.navbar-header').addClass("navbar-header");
+    //   } 
+
+    // });
+    </script>
+</html>

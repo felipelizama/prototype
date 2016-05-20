@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Prototipo</title>
+    <!-- Webkit -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300italic,300,100italic,100,400italic,500,500italic,700,700italic,900' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS Global-->
+    <link rel="stylesheet" href="css/mediaqueries.css">
+    <link rel="stylesheet" href="css/web-components.css">
+    <link rel="stylesheet" href="fen-icons.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/grayscale.css">
+</head>
+
+<body>
+<!--NAV MOVIL--> 
+    <nav id="nav-movil"  class="navbar navbar-movil navbar-inverse-fen navbar-fixed-top" role="navigation">
+        <a class="navbar-brand" href="index.html" target="_blank"><i class="i-fen-logo i-fen-logo-fen"></i></a>
+        <div class="navbar-movil nav-brand-movil">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1" style="overflow-x: hidden;">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <!--QUIENES SOMOS -->
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">QUIENES SOMOS<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Historia</a></li>
+                        <li><a href="#">Plan Estrategico</a></li>
+                        <li><a href="#">Equipo Directivo</a></li>
+                        <li><a href="#">Key Facts</a></li>
+                        <li><a href="#">Rankingy Acreditación</a></li>
+                        <li><a href="#" class="active">Brochure</a></li>
+                    </ul>
+                </li>
+                <!--PROGRAMAS -->
+                 <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">PROGRAMAS<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Pregrado</a></li>
+                        <li><a href="#">Postgrado</a></li>
+                        <li><a href="#">Programas Educación Ejecutiva</a></li>
+                    </ul>
+                </li>
+                <!--ACADEMICOS & INVESTIGACIÓN -->
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">ACADEMICOS & INVESTIGACIÓN<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Directorio Academicos</a></li>
+                        <li><a href="#">Investigación</a></li>
+                        <li><a href="#">Publicación</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Departamentos</a></li>
+                        <li><a href="#">Observatorios y C. Departamentales</a></li>
+                    </ul>
+                </li>
+        </div><!-- /.navbar-collapse -->
+    </nav><!-- Navigation -->
+
+ 
+    <!--NAV DESKTOP--> 
+
+    <nav id="nav-fen" class="navbar navbar-inverse-fen navbar-fixed-top" role="navigation">
+        <div id="navbar-h" class="navbar-header">
+            <div class="container">
+               <a class="navbar-brand" href="index.html" target="_blank"><i class="i-fen-logo i-fen-logo-fen"></i></a>
+               <form class="navbar-form" role="search" align="right">
+                    <a class="uchile-link" href="#"><p>Universidad de Chile</p></a>
+                    <a href="index.html" target="_blank"><img src="fonts/en.svg" style="height: 14px;"></a>
+                    <a href="index.html" target="_blank"><img src="fonts/es.svg" style="height: 14px;"></a>
+                    <div class="input-group" align="right">
+                        <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+                        <div class="input-group-btn">
+                            <button class="btn-2 btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+         
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+            <div class="container">
+                <ul class="nav navbar-nav">
+                    <!--QUIENES SOMOS -->
+                    <li class="dropdown"><a href="formato.html" target="_blank" class="dropdown-toggle" data-toggle="dropdown">QUIENES SOMOS<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="quienes-somos.html#historia">Historia</a></li>
+                            <li><a href="quienes-somos.html#plan">Plan Estrategico</a></li>
+                            <li><a href="quienes-somos.html#directivos">Equipo Directivo</a></li>
+                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Estructura</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="estructura.html#directivos">Equipo Directivo</a></li>
+                                    <li><a href="estructura.html#consejo">Consejo de Facultad</a></li>
+                                    <li><a href="estructura.html#evaluacion-academica">Comisión de evaluación Académica</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="quienes-somos.html#consejo-empresarial">Consejo Consultivo Empresarial</a></li>
+                            <li><a href="quienes-somos.html#circulo">Circulo de Honor</a></li>
+                            <li><a href="quienes-somos.html#keyfacts">Key Facts</a></li>
+                            <li><a href="quienes-somos.html#acreditaciones">Rankingy Acreditación</a></li>
+                            <li><a href="quienes-somos.html#brochure" class="active">Brochure</a></li>
+                        </ul>
+                    </li>
+                    <!--PROGRAMAS -->
+                     <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">PROGRAMAS<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Pregrado</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="http://admisionfen.cl/ingcom/index.html" target="_blank">Ingeniería Comercial</a></li>
+                                    <li><a href="http://admisionfen.cl/iicg/index.html" target="_blank">Ingeniería en Información y Control de Gestión</a></li>
+                                    <li><a href="http://admisionfen.cl/aud/index.html" target="_blank">Auditoría</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Postgrado</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="postgrados.html#mba">MBA</a></li>
+                                    <li><a href="postgrados.html#magister">Magister</a></li>
+                                    <li><a href="postgrados.html#doctorados">Doctorados</a></li>
+                                    <li><a href="postgrados.html#postitulos">Postitulos</a></li>
+                                </ul>
+                            </li>
+                             <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Programas Educación Ejecutiva</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="http://www.unegocios.cl/" target="_blank">uNegocios</a></li>
+                                    <li><a href="http://www.uejecutivos.cl/" target="_blank">uEjecutivos</a></li>
+                                    <li><a href="http://www.econ.uchile.cl/es/postgrado" target="_blank">Econ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--ACADEMICOS & INVESTIGACIÓN -->
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">ACADEMICOS & INVESTIGACIÓN<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="profesores.html">Directorio Academicos</a></li>
+                        <!--     <li><a href="http://investigacion.fen.uchile.cl/" target="_blank">Investigación</a></li> -->
+                            <li class="divider"></li>
+                                <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Publicaciones</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Papers</a></li>
+                                        <li><a href="#">Contribuciones Nacionales</a></li>
+                                        <li><a href="#">Contribuciones InterNacionales</a></li>
+                                        <li><a href="#">Revistas</a></li>
+                                    </ul>
+                                </li>
+                            <!-- <li><a href="#">Departamentos</a></li> -->
+                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Departamentos</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="http://negocios.uchile.cl/" target="_blank">Administración</a></li>
+                                    <li><a href="http://www.econ.uchile.cl/" target="_blank">Economia</a></li>
+                                    <li><a href="http://www.dcs.uchile.cl/" target="_blank">DCS</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Centros de Investigación</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="http://www.microdatos.cl/" target="_blank">Microdatos</a></li>
+                                    <li><a href="http://www.ias.uchile.cl/" target="_blank">IAS</a></li>
+                                    <li><a href="http://www.crem.uchile.cl/" target="_blank">CREM</a></li>
+                                    <li><a href="http://www.clgchile.cl/" target="_blank">CLG</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="obs-centros-departamentales.html">Observatorios y C. Departamentales</a></li>
+                        </ul>
+                    </li>
+                    <!--COMUNIDAD FEN -->
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">COMUNIDAD FEN<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                      <!--       <li><a href="#">Vida Universitaria</a></li> -->
+                             <li><a href="vida-universitaria.html">Vida Universitaria</a></li>
+                             <!-- <li class="dropdown dropdown-submenu"><a href="vida-universitaria.html" class="dropdown-toggle" data-toggle="dropdown">Vida Universitaria</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Ubicación</a></li>
+                                    <li><a href="#">Becas</a></li>
+                                    <li><a href="#">Housing</a></li>
+                                </ul>
+                            </li> -->
+                            <li class="divider"></li>
+                            <li><a href="http://donaciones.fen.uchile.cl/" target="_blank">Donaciones</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown dropdown-submenu"><a href="http://alumni.fen.uchile.cl/" class="dropdown-toggle" data-toggle="dropdown">alumni</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Beneficios</a></li>
+                                </ul>
+                            </li>
+                             <li><a href="http://gpm.fen.uchile.cl/" target="_blank">Grupo Politica Monetaria</a></li>
+                            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Sala de Prensa</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Registro Fotográfico</a></li>
+                                    <li><a href="#">Directorio por área de interés</a></li>
+                                </ul>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="cliping.html">FEN en la Prensa</a></li>
+                    <!--         <li><a href="#">Redes Sociales</a></li> -->
+                        </ul>
+                    </li>
+                    <!--COMUNIDAD FEN -->
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+              <!--   <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Alumni</a></li>
+                </ul> -->
+            </div>
+        </div><!-- /.navbar-collapse -->
+    </nav><!-- Navigation -->
+<!--ARTICULOS -->
+    <div id="articulos" class="container animated fadeIn">
+        <div id="content row">
+            <ul id="tabs" class="nav nav-pills nav-stacked col-md-3" data-tabs="tabs">
+                <li><a href="#red" data-toggle="tab">Directorio Académico</a></li>
+                <li><a href="#orange" data-toggle="tab">Investigación</a></li>
+                <li class="active"><a href="#yellow" data-toggle="tab">Publicaciones</a></li>
+                <li><a href="#green" data-toggle="tab">Departamentos</a></li>
+                <li><a href="#blue" data-toggle="tab">Centros de Investigación</a></li>
+                <li><a href="#yellow" data-toggle="tab">Observatorios y C. Departamentales</a></li>
+            </ul>
+            <div id="my-tab-content" class="tab-content col-md-9">
+            <h1 class="page-header">Equipo Directivo<small> fen.uchile.cl</small></h1>
+                <div class="tab-pane active" id="yellow">
+                    <div id="profesores" class="row">
+                        <div class="col-md-12 filtros-profesores form-group-fen" align="center">
+                            <!-- Donaciones Formulario-->
+                                <div class="form-group btn" align="left">
+                                        <input type="text" class="btn form-control-2" placeholder="Fernando Rubilar"> 
+                                         <select class="selectpicker show-tick">
+                                          <option>Área</option>
+                                          <option>Ketchup</option>
+                                          <option>Relish</option>
+                                        </select>
+                                        <select class="selectpicker show-tick">
+                                          <option>Programa</option>
+                                          <option>Ketchup</option>
+                                          <option>Relish</option>
+                                        </select>
+                                        <button type="submit" class="btn btn-form">Buscar</button>  
+                                </div>
+                        </div><!-- /col-12 -->
+                    </div><!-- /row -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul id="event" class="media-display">
+                                <li>
+                                    <div class="img-event">
+                                        <a href=""><img src="img/academics/nombre_apellido.jpg" style="width: 64px; height: 64px;"></a>
+                                    </div>
+                                    <div class="media-body">
+                                        <a id="teacher" href="#"><h4>Profesor 01</h4></a>
+                                        <p>Director Escuela</p>
+                                    </div>
+                                </li>
+                                <li><div class="img-event"></div>
+                                    <div class="media-body">
+                                        <a id="teacher" href="#"><h4>Profesor 01</h4></a>
+                                        <p>Director Escuela</p>
+                                    </div>
+                                </li>
+                                <li><div class="img-event"></div>
+                                    <div class="media-body">
+                                       <a id="teacher" href="#"><h4>Profesor 01</h4></a>
+                                        <p>Director Escuela</p>
+                                    </div>
+                                </li>
+                                <li><div class="img-event"></div>
+                                    <div class="media-body">
+                                        <a id="teacher" href="#"><h4>Profesor 01</h4></a>
+                                        <p>Director Escuela</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul id="event" class="media-display">
+                                <li><div class="img-event"></div>
+                                    <div class="media-body">
+                                        <a id="teacher" href="#"><h4>Profesor 01</h4></a>
+                                        <p>Director Escuela</p>
+                                    </div>
+                                </li>
+                                <li><div class="img-event"></div>
+                                    <div class="media-body">
+                                        <a id="teacher" href="#"><h4>Profesor 01</h4></a>
+                                        <p>Director Escuela</p>
+                                    </div>
+                                </li>
+                                <li><div class="img-event"></div>
+                                    <div class="media-body">
+                                        <a id="teacher" href="#"><h4>Profesor 01</h4></a>
+                                        <p>Director Escuela</p>
+                                    </div>
+                                </li>
+                                <li><div class="img-event"></div>
+                                    <div class="media-body">
+                                       <a id="teacher" href="#"><h4>Profesor 01</h4></a>
+                                        <p>Director Escuela</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Pagination -->
+                        <div class="row" align="left">
+                            <div class="col-lg-12">
+                                <ul class="pagination">
+                                    <li>
+                                        <a href="#">&laquo;</a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="#">1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">4</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">5</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">&raquo;</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- /row -->
+                    </div><!-- /row -->    
+                </div><!-- /tab pane-->
+            </div><!-- /my yab content -->
+
+            <!-- TEACHER-RESUME -->
+            <div id="teacher-resume" style="display: none" class="col-md-8">
+            <ol class="breadcrumb">
+              <li><a href="#">Academicos & Investigación</a></li>
+              <li><a href="#">Directorio Acádemico</a></li>
+              <li class="active">Profesor</li>
+            </ol>
+                <div class="teacher-bio">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="foto-teacher-bio"><img src="img/academics/nombre_apellido.jpg" style="width: 160px;"></div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="media-body">
+                                <h4 class="color-fen">Nombre de Profesor</h4>
+                                <p>Profesor Titular</p>
+                                <p>Master...</p>
+                                <p>Ingeniero Comercial, Universidad de Chile</p>
+                                <p>Optatis mossit ut aut ant aut dolendi beria pro dem quibus volorup taspis que quas aut ut id eatur? Quia solupicta enis aturio eum, tem laborep restrumqui dolupti ut apite ex ea sero doluptur sum deseque nimodignat.
+                                Atibusdam quam faccus aut ute res essum, susa am, tem. Itataque nos moluptatur?
+                                Ceprorum apero maximporit poreper chicatinci aut occus adigent unt evendam alibust quatur autaepe sae nonsedit faccus, te lant.
+                                Ugiatur si conse pa iliscimus magnientio oditiam aut lia delende sita sit ipid utem quam que de int aut voles sus aliqui sinullature nullum sinciam audam ipsam veliquam ea voluptas quodign imillaut unt.</p>
+
+                                <p class="color-fen"><strong>Información de Contacto</strong></p>
+                                <p>Teléfono: +56 22 9782200</p>
+                                <p>e-mail: juanito@fen.uchile.cl</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="teacher-tabs col-md-12">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Papers ISI</a></li>
+                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">J. Inter</a></li>
+                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">J. Nac.</a></li>
+                        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Cap. Libro y Libros</a></li>
+                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Rev. con Comité Ed.</a></li>
+                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Seminarios</a></li>
+                        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Congresos</a></li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="home">
+                            <ul id="list-articulos">
+                                <li><i class="i-fen i-fen-documents"></i></>
+                                    <p>Quiscia eumqui dus nusciis suntibus qui restis sandi conse pratures dolor ate si deliquatia idus. Maio. Berro ommodis et ea acitem repuda cor autem</p>
+                                </li>
+                                <li><i class="i-fen i-fen-documents"></i><p>Quiscia eumqui dus nusciis suntibus qui restis sandi conse pratures dolor ate si deliquatia idus. Maio. Berro ommodis et ea acitem repuda cor autem</p></li>
+                            </ul>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="profile">2...</br>3...</br>3...</br>3...</div>
+                        <div role="tabpanel" class="tab-pane" id="messages">3...</div>
+                        <div role="tabpanel" class="tab-pane" id="settings">4...</div>
+                         <div role="tabpanel" class="tab-pane" id="profile">5...</div>
+                        <div role="tabpanel" class="tab-pane" id="messages">6...</div>
+                        <div role="tabpanel" class="tab-pane" id="settings">7...</div>
+                    </div>
+                </div>
+            </div><!-- /TEACHER RESUME-->
+        </div><!-- /content row-->
+</div><!-- articulos -->
+
+<!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row bg-footer-1" align="left">
+                <div id="f1" class="col-md-6">
+                    <p>ACREDITACIONES</p>
+                    <ul class="credencial-footer">
+                        <li><i class="i-fen-xl i-fen-aacsb"></i></li>
+                        <li><i class="i-fen-xl i-fen-acreditacion"></i></li>
+                        <li><i class="i-fen-xl i-fen-amba"></i></li>
+                    </ul>
+                </div>
+                <div id="f2" class="col-md-6" align="right">
+                <p>REDES SOCIALES</p>
+                    <ul class="social-footer">
+                        <li><a href="#"><i class="i-fen i-fen-facebook"></i></a></li>
+                        <li><a href="#"><i class="i-fen i-fen-twitter"></i></a></li>
+                        <li><a href="#"><i class="i-fen i-fen-linkedin"></i></a></li>
+                        <li><a href="#"><i class="i-fen i-fen-youtube"></i></a></li>
+                        <li><a href="#"><i class="i-fen i-fen-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+    </footer>
+    <footer>
+            <div class="row" align="center">
+                <div class="col-lg-12 bg-footer-2">
+                    <p>Diagonal Paraguay 205 - 257 Santiago de Chile - Código Postal 0023456</p>
+                </div>
+            </div>
+            <!-- /.row -->
+    </footer> 
+</body>
+
+
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="js/grayscale.js"></script>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+
+      <script type="text/javascript">
+        (function($){
+        $(document).ready(function(){
+            $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+                event.preventDefault(); 
+                event.stopPropagation(); 
+                $(this).parent().siblings().removeClass('open');
+                $(this).parent().toggleClass('open');
+            });
+        });
+    })(jQuery);
+    </script>
+    <!-- (Optional) Latest compiled and minified JavaScript translation files -->
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $(document).scroll(function(e){
+
+            console.log(e);
+            
+            var posicionScroll = $(this).scrollTop();
+
+            if(posicionScroll < 50){
+                //$('#navbar-h').addClass("animated fadeOutTop slow");
+                $('#navbar-h').show(300).addClass("navbar-header");
+
+            } 
+            else {
+                $('#navbar-h').hide(300).removeClass("navbar-header");
+                 //$( "#navbar-h" ).hide("slow");
+            }
+        });
+    });
+
+    //     $(window).scroll(function(e) {
+    //         console.log(e);
+
+    //   if ($(document).scrollTop() < 50) {
+    //     $('nav div.navbar-header').addClass("navbar-header");
+    //   } 
+
+    // });
+    </script>
+    <!-- DIV REMOVE-->
+    <script type="text/javascript">
+        $('#teacher').on('click', function() {
+            $('#my-tab-content').remove();
+            $('#teacher-resume').show();
+        });
+    </script>
+        <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('#tabs').tab();
+        });
+    </script> 
+</html>
